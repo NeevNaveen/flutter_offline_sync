@@ -1,0 +1,46 @@
+{
+  "brandPrimary": {
+    "$type": "color",
+    "$value": "#2563EB",
+    "$extensions": { "com.figma.modeName": "Light" }
+  },
+  "brandSecondary": {
+    "$type": "color",
+    "$value": "#14B8A6"
+  },
+  "statusSuccess": {
+    "$type": "color",
+    "$value": "#16A34A"
+  },
+  "statusWarning": {
+    "$type": "color",
+    "$value": "#F59E0B"
+  },
+  "statusError": {
+    "$type": "color",
+    "$value": "#DC2626"
+  },
+  "surfaceCanvas": {
+    "$type": "color",
+    "$value": "#F8FAFC"
+  },
+  "surfaceDefault": {
+    "$type": "color",
+    "$value": "#FFFFFF"
+  },
+  "textPrimary": {
+    "$type": "color",
+    "$value": "#0F172A"
+  },
+  "textSecondary": {
+    "$type": "color",
+    "$value": "#64748B"
+  },
+  "borderDefault": {
+    "$type": "color",
+    "$value": "#E2E8F0"
+  },
+  "$extensions": {
+    "com.figma.modeName": "Light"
+  }
+}
