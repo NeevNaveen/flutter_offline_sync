@@ -1,0 +1,19 @@
+name: foundation
+description: "Reusable W3C design tokens and generated theme for flutter_offline_sync."
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.11.5
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  build_runner: ^2.4.15
+  design_builder: ^1.0.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

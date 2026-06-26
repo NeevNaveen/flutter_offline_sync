@@ -1,0 +1,301 @@
+{
+  "$schemaVersion": 3,
+  "$id": "io.flutter_offline_sync.foundation",
+  "$version": "1.0.0",
+  "$name": "Foundation",
+  "$description": "Enterprise design tokens for flutter_offline_sync. Uses W3C $type/$value format compatible with Figma Variables and Tokens Studio exports.",
+  "light": {
+    "$variables": {
+      "font": {
+        "family": {
+          "primary": "Inter"
+        }
+      }
+    },
+    "color": {
+      "semantic": {
+        "$description": "Semantic colors for light mode",
+        "primary": { "$type": "color", "$value": "#2563EB" },
+        "secondary": { "$type": "color", "$value": "#14B8A6" },
+        "success": { "$type": "color", "$value": "#16A34A" },
+        "warning": { "$type": "color", "$value": "#F59E0B" },
+        "error": { "$type": "color", "$value": "#DC2626" },
+        "background": { "$type": "color", "$value": "#F8FAFC" },
+        "surface": { "$type": "color", "$value": "#FFFFFF" },
+        "textPrimary": { "$type": "color", "$value": "#0F172A" },
+        "textSecondary": { "$type": "color", "$value": "#64748B" },
+        "border": { "$type": "color", "$value": "#E2E8F0" }
+      }
+    },
+    "sizes": {
+      "spacing": {
+        "none": { "$type": "number", "$value": 0 },
+        "xxs": { "$type": "number", "$value": 2 },
+        "xs": { "$type": "number", "$value": 4 },
+        "sm": { "$type": "number", "$value": 8 },
+        "md": { "$type": "number", "$value": 12 },
+        "lg": { "$type": "number", "$value": 16 },
+        "xl": { "$type": "number", "$value": 20 },
+        "xxl": { "$type": "number", "$value": 24 },
+        "xxxl": { "$type": "number", "$value": 32 },
+        "screen": { "$type": "number", "$value": 16 },
+        "section": { "$type": "number", "$value": 32 }
+      },
+      "radius": {
+        "none": { "$type": "number", "$value": 0 },
+        "xs": { "$type": "number", "$value": 2 },
+        "sm": { "$type": "number", "$value": 4 },
+        "md": { "$type": "number", "$value": 8 },
+        "lg": { "$type": "number", "$value": 12 },
+        "xl": { "$type": "number", "$value": 16 },
+        "xxl": { "$type": "number", "$value": 24 },
+        "full": { "$type": "number", "$value": 999 }
+      },
+      "elevation": {
+        "none": { "$type": "number", "$value": 0 },
+        "sm": { "$type": "number", "$value": 1 },
+        "md": { "$type": "number", "$value": 3 },
+        "lg": { "$type": "number", "$value": 6 },
+        "xl": { "$type": "number", "$value": 12 }
+      },
+      "motion": {
+        "fast": { "$type": "number", "$value": 150 },
+        "normal": { "$type": "number", "$value": 300 },
+        "slow": { "$type": "number", "$value": 500 },
+        "$extensions": {
+          "com.foundation.curve": {
+            "standard": "easeInOut",
+            "emphasized": "easeOutBack"
+          }
+        }
+      },
+      "shadow": {
+        "cardBlur": { "$type": "number", "$value": 8 },
+        "cardOffsetY": { "$type": "number", "$value": 2 },
+        "cardOpacity": { "$type": "number", "$value": 0.08 },
+        "dialogBlur": { "$type": "number", "$value": 24 },
+        "dialogOffsetY": { "$type": "number", "$value": 8 },
+        "dialogOpacity": { "$type": "number", "$value": 0.12 }
+      }
+    },
+    "typography": {
+      "display": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 36,
+            "fontWeight": 700,
+            "height": 1.2222,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "headline": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 28,
+            "fontWeight": 700,
+            "height": 1.2857,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "title": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 20,
+            "fontWeight": 600,
+            "height": 1.4,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "body": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "height": 1.5,
+            "letterSpacing": 0
+          }
+        },
+        "medium": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "height": 1.4286,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "label": {
+        "medium": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 12,
+            "fontWeight": 500,
+            "height": 1.3333,
+            "letterSpacing": 0
+          }
+        }
+      }
+    }
+  },
+  "dark": {
+    "$variables": {
+      "font": {
+        "family": {
+          "primary": "Inter"
+        }
+      }
+    },
+    "color": {
+      "semantic": {
+        "$description": "Semantic colors for dark mode",
+        "primary": { "$type": "color", "$value": "#60A5FA" },
+        "secondary": { "$type": "color", "$value": "#2DD4BF" },
+        "success": { "$type": "color", "$value": "#22C55E" },
+        "warning": { "$type": "color", "$value": "#FBBF24" },
+        "error": { "$type": "color", "$value": "#F87171" },
+        "background": { "$type": "color", "$value": "#0F172A" },
+        "surface": { "$type": "color", "$value": "#1E293B" },
+        "textPrimary": { "$type": "color", "$value": "#FFFFFF" },
+        "textSecondary": { "$type": "color", "$value": "#94A3B8" },
+        "border": { "$type": "color", "$value": "#334155" }
+      }
+    },
+    "sizes": {
+      "spacing": {
+        "none": { "$type": "number", "$value": 0 },
+        "xxs": { "$type": "number", "$value": 2 },
+        "xs": { "$type": "number", "$value": 4 },
+        "sm": { "$type": "number", "$value": 8 },
+        "md": { "$type": "number", "$value": 12 },
+        "lg": { "$type": "number", "$value": 16 },
+        "xl": { "$type": "number", "$value": 20 },
+        "xxl": { "$type": "number", "$value": 24 },
+        "xxxl": { "$type": "number", "$value": 32 },
+        "screen": { "$type": "number", "$value": 16 },
+        "section": { "$type": "number", "$value": 32 }
+      },
+      "radius": {
+        "none": { "$type": "number", "$value": 0 },
+        "xs": { "$type": "number", "$value": 2 },
+        "sm": { "$type": "number", "$value": 4 },
+        "md": { "$type": "number", "$value": 8 },
+        "lg": { "$type": "number", "$value": 12 },
+        "xl": { "$type": "number", "$value": 16 },
+        "xxl": { "$type": "number", "$value": 24 },
+        "full": { "$type": "number", "$value": 999 }
+      },
+      "elevation": {
+        "none": { "$type": "number", "$value": 0 },
+        "sm": { "$type": "number", "$value": 1 },
+        "md": { "$type": "number", "$value": 3 },
+        "lg": { "$type": "number", "$value": 6 },
+        "xl": { "$type": "number", "$value": 12 }
+      },
+      "motion": {
+        "fast": { "$type": "number", "$value": 150 },
+        "normal": { "$type": "number", "$value": 300 },
+        "slow": { "$type": "number", "$value": 500 },
+        "$extensions": {
+          "com.foundation.curve": {
+            "standard": "easeInOut",
+            "emphasized": "easeOutBack"
+          }
+        }
+      },
+      "shadow": {
+        "cardBlur": { "$type": "number", "$value": 8 },
+        "cardOffsetY": { "$type": "number", "$value": 2 },
+        "cardOpacity": { "$type": "number", "$value": 0.08 },
+        "dialogBlur": { "$type": "number", "$value": 24 },
+        "dialogOffsetY": { "$type": "number", "$value": 8 },
+        "dialogOpacity": { "$type": "number", "$value": 0.12 }
+      }
+    },
+    "typography": {
+      "display": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 36,
+            "fontWeight": 700,
+            "height": 1.2222,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "headline": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 28,
+            "fontWeight": 700,
+            "height": 1.2857,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "title": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 20,
+            "fontWeight": 600,
+            "height": 1.4,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "body": {
+        "large": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "height": 1.5,
+            "letterSpacing": 0
+          }
+        },
+        "medium": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "height": 1.4286,
+            "letterSpacing": 0
+          }
+        }
+      },
+      "label": {
+        "medium": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "$font.family.primary",
+            "fontSize": 12,
+            "fontWeight": 500,
+            "height": 1.3333,
+            "letterSpacing": 0
+          }
+        }
+      }
+    }
+  }
+}

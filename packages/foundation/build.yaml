@@ -1,0 +1,11 @@
+targets:
+  $default:
+    builders:
+      design_builder|design_builder:
+        enabled: true
+        options:
+          spec_path: "lib/schema/foundation-spec.schema.json"
+          input_glob: "lib/tokens/*.tokens.json"
+          output_path: "src/generated"
+          output_file_name: "foundation_theme"
+          class_name: "FoundationTheme"

@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/flutter_offline_sync/foundation/schema/foundation-spec.schema.json",
+  "title": "Foundation Design Tokens",
+  "description": "W3C Design Tokens schema for the reusable foundation package. Compatible with Figma Variables / Tokens Studio exports using $type and $value.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schemaVersion", "$id", "$version", "$name", "light", "dark"],
+  "properties": {
+    "$schemaVersion": {
+      "type": "integer",
+      "const": 3
+    },
+    "$id": { "type": "string" },
+    "$version": { "type": "string" },
+    "$name": { "type": "string" },
+    "$description": { "type": "string" },
+    "$variables": { "type": "object", "additionalProperties": true },
+    "light": { "$ref": "#/definitions/appearance" },
+    "dark": { "$ref": "#/definitions/appearance" }
+  },
+  "definitions": {
+    "colorToken": {
+      "type": "object",
+      "required": ["$type", "$value"],
+      "properties": {
+        "$type": { "type": "string", "const": "color" },
+        "$value": {
+          "type": "string",
+          "pattern": "^#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+        },
+        "$description": { "type": "string" },
+        "$extensions": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "numberToken": {
+      "type": "object",
+      "required": ["$type", "$value"],
+      "properties": {
+        "$type": { "type": "string", "enum": ["number", "dimension"] },
+        "$value": { "type": "number" },
+        "$description": { "type": "string" },
+        "$extensions": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "textStyleToken": {
+      "type": "object",
+      "required": ["$type", "$value"],
+      "properties": {
+        "$type": { "type": "string", "const": "typography" },
+        "$value": {
+          "type": "object",
+          "properties": {
+            "fontSize": { "type": "number" },
+            "fontWeight": {
+              "type": "integer",
+              "enum": [100, 200, 300, 400, 500, 600, 700, 800, 900]
+            },
+            "height": { "type": "number" },
+            "letterSpacing": { "type": "number" },
+            "color": {
+              "type": "string",
+              "pattern": "^#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+            },
+            "fontFamily": { "type": "string" }
+          }
+        },
+        "$description": { "type": "string" },
+        "$extensions": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "tokenScale": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/numberToken" }
+    },
+    "typographyWeight": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$description": { "type": "string" },
+        "large": { "$ref": "#/definitions/textStyleToken" },
+        "medium": { "$ref": "#/definitions/textStyleToken" }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$description": { "type": "string" },
+        "display": { "$ref": "#/definitions/typographyWeight" },
+        "headline": { "$ref": "#/definitions/typographyWeight" },
+        "title": { "$ref": "#/definitions/typographyWeight" },
+        "body": { "$ref": "#/definitions/typographyWeight" },
+        "label": { "$ref": "#/definitions/typographyWeight" }
+      }
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["semantic"],
+      "properties": {
+        "semantic": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "primary",
+            "secondary",
+            "success",
+            "warning",
+            "error",
+            "background",
+            "surface",
+            "textPrimary",
+            "textSecondary",
+            "border"
+          ],
+          "properties": {
+            "$description": { "type": "string" },
+            "primary": { "$ref": "#/definitions/colorToken" },
+            "secondary": { "$ref": "#/definitions/colorToken" },
+            "success": { "$ref": "#/definitions/colorToken" },
+            "warning": { "$ref": "#/definitions/colorToken" },
+            "error": { "$ref": "#/definitions/colorToken" },
+            "background": { "$ref": "#/definitions/colorToken" },
+            "surface": { "$ref": "#/definitions/colorToken" },
+            "textPrimary": { "$ref": "#/definitions/colorToken" },
+            "textSecondary": { "$ref": "#/definitions/colorToken" },
+            "border": { "$ref": "#/definitions/colorToken" }
+          }
+        }
+      }
+    },
+    "appearance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["color", "sizes", "typography"],
+      "properties": {
+        "$variables": { "type": "object", "additionalProperties": true },
+        "color": { "$ref": "#/definitions/color" },
+        "sizes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "$description": { "type": "string" },
+            "spacing": { "$ref": "#/definitions/tokenScale" },
+            "radius": { "$ref": "#/definitions/tokenScale" },
+            "elevation": { "$ref": "#/definitions/tokenScale" },
+            "motion": { "$ref": "#/definitions/tokenScale" },
+            "shadow": { "$ref": "#/definitions/tokenScale" }
+          }
+        },
+        "typography": { "$ref": "#/definitions/typography" }
+      }
+    }
+  }
+}
