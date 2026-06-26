@@ -1,6 +1,4 @@
 {
-  "$schemaVersion": 1,
-  "description": "Maps Figma W3C token exports to canonical foundation.tokens.json paths. Each key is a target path; the value points at a token inside a Figma export file.",
   "inputDir": "assets/figma",
   "templatePath": "lib/tokens/foundation.tokens.json",
   "outputPath": "lib/tokens/foundation.tokens.json",

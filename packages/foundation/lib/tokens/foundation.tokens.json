@@ -17,43 +17,53 @@
         "$description": "Semantic colors for light mode",
         "primary": {
           "$type": "color",
-          "$value": "#2563EB"
+          "$value": "#2563EB",
+          "$description": null
         },
         "secondary": {
           "$type": "color",
-          "$value": "#14B8A6"
+          "$value": "#14B8A6",
+          "$description": null
         },
         "success": {
           "$type": "color",
-          "$value": "#16A34A"
+          "$value": "#16A34A",
+          "$description": null
         },
         "warning": {
           "$type": "color",
-          "$value": "#F59E0B"
+          "$value": "#F59E0B",
+          "$description": null
         },
         "error": {
           "$type": "color",
-          "$value": "#DC2626"
+          "$value": "#DC2626",
+          "$description": null
         },
         "background": {
           "$type": "color",
-          "$value": "#F8FAFC"
+          "$value": "#F8FAFC",
+          "$description": null
         },
         "surface": {
           "$type": "color",
-          "$value": "#FFFFFF"
+          "$value": "#FFFFFF",
+          "$description": null
         },
         "textPrimary": {
           "$type": "color",
-          "$value": "#0F172A"
+          "$value": "#0F172A",
+          "$description": null
         },
         "textSecondary": {
           "$type": "color",
-          "$value": "#64748B"
+          "$value": "#64748B",
+          "$description": null
         },
         "border": {
           "$type": "color",
-          "$value": "#E2E8F0"
+          "$value": "#E2E8F0",
+          "$description": null
         }
       }
     },
@@ -61,81 +71,100 @@
       "spacing": {
         "none": {
           "$type": "number",
-          "$value": 0
+          "$value": 0,
+          "$description": null
         },
         "xxs": {
           "$type": "number",
-          "$value": 2
+          "$value": 2,
+          "$description": null
         },
         "xs": {
           "$type": "number",
-          "$value": 4
+          "$value": 4,
+          "$description": null
         },
         "sm": {
           "$type": "number",
-          "$value": 8
+          "$value": 8,
+          "$description": null
         },
         "md": {
           "$type": "number",
-          "$value": 12
+          "$value": 12,
+          "$description": null
         },
         "lg": {
           "$type": "number",
-          "$value": 16
+          "$value": 16,
+          "$description": null
         },
         "xl": {
           "$type": "number",
-          "$value": 20
+          "$value": 20,
+          "$description": null
         },
         "xxl": {
           "$type": "number",
-          "$value": 24
+          "$value": 24,
+          "$description": null
         },
         "xxxl": {
           "$type": "number",
-          "$value": 32
+          "$value": 32,
+          "$description": null
         },
         "screen": {
           "$type": "number",
-          "$value": 16
+          "$value": 16,
+          "$description": null
         },
         "section": {
           "$type": "number",
-          "$value": 32
+          "$value": 32,
+          "$description": null
         }
       },
       "radius": {
         "none": {
           "$type": "number",
-          "$value": 0
+          "$value": 0,
+          "$description": null
         },
         "xs": {
           "$type": "number",
-          "$value": 2
+          "$value": 2,
+          "$description": null
         },
         "sm": {
           "$type": "number",
-          "$value": 4
+          "$value": 4,
+          "$description": null
         },
         "md": {
           "$type": "number",
-          "$value": 8
+          "$value": 8,
+          "$description": null
         },
         "lg": {
           "$type": "number",
-          "$value": 12
+          "$value": 12,
+          "$description": null
         },
         "xl": {
           "$type": "number",
-          "$value": 16
+          "$value": 16,
+          "$description": null
         },
         "xxl": {
           "$type": "number",
-          "$value": 24
+          "$value": 24,
+          "$description": null
         },
         "full": {
           "$type": "number",
-          "$value": 999
+          "$value": 999,
+          "$description": null
         }
       },
       "elevation": {
@@ -293,43 +322,53 @@
         "$description": "Semantic colors for dark mode",
         "primary": {
           "$type": "color",
-          "$value": "#60A5FA"
+          "$value": "#60A5FA",
+          "$description": null
         },
         "secondary": {
           "$type": "color",
-          "$value": "#2DD4BF"
+          "$value": "#2DD4BF",
+          "$description": null
         },
         "success": {
           "$type": "color",
-          "$value": "#22C55E"
+          "$value": "#22C55E",
+          "$description": null
         },
         "warning": {
           "$type": "color",
-          "$value": "#FBBF24"
+          "$value": "#FBBF24",
+          "$description": null
         },
         "error": {
           "$type": "color",
-          "$value": "#F87171"
+          "$value": "#F87171",
+          "$description": null
         },
         "background": {
           "$type": "color",
-          "$value": "#0F172A"
+          "$value": "#0F172A",
+          "$description": null
         },
         "surface": {
           "$type": "color",
-          "$value": "#1E293B"
+          "$value": "#1E293B",
+          "$description": null
         },
         "textPrimary": {
           "$type": "color",
-          "$value": "#FFFFFF"
+          "$value": "#FFFFFF",
+          "$description": null
         },
         "textSecondary": {
           "$type": "color",
-          "$value": "#94A3B8"
+          "$value": "#94A3B8",
+          "$description": null
         },
         "border": {
           "$type": "color",
-          "$value": "#334155"
+          "$value": "#334155",
+          "$description": null
         }
       }
     },
@@ -337,81 +376,100 @@
       "spacing": {
         "none": {
           "$type": "number",
-          "$value": 0
+          "$value": 0,
+          "$description": null
         },
         "xxs": {
           "$type": "number",
-          "$value": 2
+          "$value": 2,
+          "$description": null
         },
         "xs": {
           "$type": "number",
-          "$value": 4
+          "$value": 4,
+          "$description": null
         },
         "sm": {
           "$type": "number",
-          "$value": 8
+          "$value": 8,
+          "$description": null
         },
         "md": {
           "$type": "number",
-          "$value": 12
+          "$value": 12,
+          "$description": null
         },
         "lg": {
           "$type": "number",
-          "$value": 16
+          "$value": 16,
+          "$description": null
         },
         "xl": {
           "$type": "number",
-          "$value": 20
+          "$value": 20,
+          "$description": null
         },
         "xxl": {
           "$type": "number",
-          "$value": 24
+          "$value": 24,
+          "$description": null
         },
         "xxxl": {
           "$type": "number",
-          "$value": 32
+          "$value": 32,
+          "$description": null
         },
         "screen": {
           "$type": "number",
-          "$value": 16
+          "$value": 16,
+          "$description": null
         },
         "section": {
           "$type": "number",
-          "$value": 32
+          "$value": 32,
+          "$description": null
         }
       },
       "radius": {
         "none": {
           "$type": "number",
-          "$value": 0
+          "$value": 0,
+          "$description": null
         },
         "xs": {
           "$type": "number",
-          "$value": 2
+          "$value": 2,
+          "$description": null
         },
         "sm": {
           "$type": "number",
-          "$value": 4
+          "$value": 4,
+          "$description": null
         },
         "md": {
           "$type": "number",
-          "$value": 8
+          "$value": 8,
+          "$description": null
         },
         "lg": {
           "$type": "number",
-          "$value": 12
+          "$value": 12,
+          "$description": null
         },
         "xl": {
           "$type": "number",
-          "$value": 16
+          "$value": 16,
+          "$description": null
         },
         "xxl": {
           "$type": "number",
-          "$value": 24
+          "$value": 24,
+          "$description": null
         },
         "full": {
           "$type": "number",
-          "$value": 999
+          "$value": 999,
+          "$description": null
         }
       },
       "elevation": {

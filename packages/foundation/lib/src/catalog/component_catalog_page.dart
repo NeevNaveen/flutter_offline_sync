@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foundation/foundation.dart';
 
-/// Live preview of all foundation UI components.
 class ComponentCatalogPage extends StatefulWidget {
   const ComponentCatalogPage({super.key});
 

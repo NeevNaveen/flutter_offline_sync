@@ -100,7 +100,6 @@ Map<String, dynamic>? _resolveFigmaToken(Map<String, dynamic> json, String token
     }
   }
 
-  // Support nested paths such as "Group.tokenName".
   final parts = tokenKey.split('.');
   dynamic current = json;
   for (final part in parts) {

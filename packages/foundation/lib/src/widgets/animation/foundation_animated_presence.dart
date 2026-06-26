@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foundation/foundation.dart';
 
-/// Fade-and-slide entrance for messages, alerts, and inline errors.
 class FoundationAnimatedPresence extends StatefulWidget {
   const FoundationAnimatedPresence({
     super.key,
@@ -71,7 +70,6 @@ class _FoundationAnimatedPresenceState extends State<FoundationAnimatedPresence>
   }
 }
 
-/// Subtle shake when validation fails.
 class FoundationShake extends StatefulWidget {
   const FoundationShake({
     super.key,

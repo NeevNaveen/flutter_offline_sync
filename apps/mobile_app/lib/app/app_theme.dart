@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:foundation/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Builds [ThemeData] with [FoundationTheme] registered as a [ThemeExtension].
 ThemeData buildAppTheme({
   required FoundationTheme foundation,
   required Brightness brightness,
